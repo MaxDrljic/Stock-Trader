@@ -1,11 +1,22 @@
 <template>
   <div id="container">
-    <router-view></router-view>
+    <app-header></app-header>
+    <div class="row">
+      <div class="col-xs-12">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Header from "./components/Header.vue";
+
+export default {
+  components: {
+    appHeader: Header
+  }
+};
 </script>
 
 <style>
@@ -16,5 +27,9 @@ export default {};
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body {
+  padding: 30px;
 }
 </style>
