@@ -1,4 +1,6 @@
-# stock-trader
+# Stock Trader Simulator
+
+Be sure to create a Firebase instance and add the URL in the main.js
 
 ## Project setup
 ```
